@@ -43,13 +43,14 @@ public:
 
     void printElement(T e) {
         cout << e << endl;
-    }
+    };
 
     set2<T>& operator+(T e) {
         v.push_back(e);
         sort();
         return *this;
     };
+
     set2<T>& operator+(set2 s) {
         unsigned int i;
         for (i = 0; i<s.v.size(); i++) {
@@ -57,6 +58,10 @@ public:
         }
         sort();
         return *this;
+    };
+
+    bool operator > (set2 s) {
+        return v.size() > s.v.size();
     };
 };
 
