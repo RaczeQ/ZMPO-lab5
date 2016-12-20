@@ -1,5 +1,4 @@
 #include <iostream>
-#include "set.h"
 #include "set2.h"
 #include "MyType.h"
 
